@@ -54,3 +54,27 @@ VALUES
 (38, 38, 'Mimoza', 3, 76, 38.0, 21, '2023-06-26', 'Köpek', 'Papillon'),
 (39, 39, 'İnci', 5, 78, 38.4, 23, '2023-06-27', 'Kedi', 'Birman'),
 (40, 40, 'Bora', 6, 85, 39.0, 25, '2023-06-28', 'Köpek', 'Shih Tzu');
+
+
+dblm:
+
+Table hayvan_verileri {
+    Veri_ID INT [pk]
+    hayvan_ID INT
+    hayvanin_ismi VARCHAR(50)
+    hayvanin_yasi INT
+    Nabız INT
+    vucut_sicakligi DECIMAL(4,2)
+    Solunum_Hizi INT
+    Veri_Zamani DATE
+    Hayvan_Turu VARCHAR(50)
+    Hayvanin_Cinsi VARCHAR(50)
+}
+
+Table barinak_uygulamasi {
+    hayvan_ID INT [pk]
+    hayvanin_ismi VARCHAR(50)
+    hayvanin_yasi INT
+}
+
+Ref: hayvan_verileri.hayvan_ID > barinak_uygulamasi.hayvan_ID
