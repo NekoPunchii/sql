@@ -3,16 +3,16 @@ CREATE TABLE hayvan_verileri (
     hayvan_ID INT,
     hayvanin_ismi VARCHAR(50),
     hayvanin_yasi INT,
-    Nabız INT,
-    vucut_sicakligi DECIMAL(4,2),
-    Solunum_Hizi INT,
-    Veri_Zamani DATE,
+    Nabız_inavasyon INT,
+    vucut_sicakligi_inavasyon DECIMAL(4,2),
+    Solunum_Hizi_inavasyon INT,
+    Veri_Zamani_inavasyon DATE,
     Hayvan_Turu VARCHAR(50),
     Hayvanin_Cinsi VARCHAR(50)
 );
 
 
-INSERT INTO hayvan_verileri (Veri_ID, hayvan_ID, hayvanin_ismi, hayvanin_yasi, Nabız, vucut_sicakligi, Solunum_Hizi, Veri_Zamani, Hayvan_Turu, Hayvanin_Cinsi)
+INSERT INTO hayvan_verileri (Veri_ID, hayvan_ID, hayvanin_ismi, hayvanin_yasi, Nabız_inavasyon, vucut_sicakligi_inavasyon, Solunum_Hizi_inavasyon, Veri_Zamani_inavasyon, Hayvan_Turu, Hayvanin_Cinsi)
 VALUES
 (1, 1, 'Max', 3, 80, 38.5, 20, '2023-05-20', 'Köpek', 'Golden Retriever'),
 (2, 2, 'Bella', 5, 75, 38.0, 22, '2023-05-21', 'Kedi', 'Scottish Fold'),
